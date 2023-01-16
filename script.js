@@ -17,7 +17,7 @@ function update(statusBar, textArea) {
         qualifier = "in selection";
     }
 
-    let charCount = text.trim().length;
+    let charCount = [...text.trim()].length;
     let wordCount = countWords(text);
     statusBar.innerText = `${charCount} characters　${wordCount} words　${qualifier}`;
 
