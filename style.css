@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #eee;
+    font-family: sans-serif;
+}
+
+#input {
+    background-color: transparent;
+    color: inherit;
+    font-size: 1rem;
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    line-height: 150%;
+    width: 100%;
+    height: calc(100% - 2rem);
+    padding: 1rem;
+    border-style: none;
+    resize: none;
+}
+
+#input:focus {
+    outline: 0;
+}
+
+#status {
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    line-height: 2rem;
+    border-top: 1px solid #666;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #eee;
+        color: #111;
+    }
+
+    #status {
+        background-color: #ccc;
+        color: #000;
+        border-top: 1px solid #999;
+    }
+}
