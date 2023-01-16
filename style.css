@@ -16,6 +16,7 @@ body {
     line-height: 150%;
     width: 100%;
     height: calc(100% - 2rem);
+    bottom: 0;
     padding: 1rem;
     border-style: none;
     resize: none;
@@ -29,12 +30,12 @@ body {
     background-color: #333;
     color: #fff;
     position: absolute;
-    bottom: 0;
+    top: 0;
     width: 100%;
     box-sizing: border-box;
     padding: 0 1rem;
     line-height: 2rem;
-    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
 }
 
 @media (prefers-color-scheme: light) {
@@ -46,6 +47,6 @@ body {
     #status {
         background-color: #ccc;
         color: #000;
-        border-top: 1px solid #999;
+        border-bottom: 1px solid #999;
     }
 }
